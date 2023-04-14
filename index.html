@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--To do  Meta seo  -> description + key words  -->
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bc3de9fbb5.js" crossorigin="anonymous"></script>
+    <!-- to do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- to do css files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css">
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logofiles/png/black&white-trans.png" alt="logo" width="90px">
+        </div>
+        <input type="checkbox" id="toggle">
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </nav>
+        <div class="side">
+          <i class="fa-solid fa-earth-americas lang">
+            <ul>
+              <li>English</li>
+              <li>Arabic</li>
+              <li>France</li>
+              <li>Korean</li>
+              <li>Germany</li>
+            </ul>
+          </i>
+          <div class="txt">
+            <i class="fa-solid fa-user"></i>
+            <a href="#"><a href="signin.html">Sign In</a>
+          </div>
+        </div>
+        <label  for="toggle">
+          <i class="fa-solid fa-bars toggle-menu"></i>
+        </label>
+      </div>  
+    </header>
+    <!-- End Header -->
+    <!-- Start landing -->
+    <div class="landing">
+      <div class="search-box">
+        <div class="trip-type">
+          <div>One Way</div>
+          <div class="active">Round Trip</div>
+          <div>Multi City</div>
+        </div>
+        <div class="selections">
+          <input type="text" class="main" placeholder="from">
+          <input type="text" class="main" placeholder="to">
+          <input type="text" class="second" placeholder="depart" value="">
+          <input type="text" class="second" placeholder="return" value="">
+        </div>
+        <div class="categories">
+          <select name="" id="">
+            <option value="">1 Adult</option>
+            <option value="">2 Adult</option>
+            <option value="">3 Adult</option>
+          </select>
+          <select name="" id="">
+            <option value="">Economy</option>
+            <option value="">Premium Economy</option>
+            <option value="">Business Class</option>
+            <option value="">First Class</option>
+          </select>
+          <button class="btn ">Search</button>
+        </div>
+      </div>
+    </div>
+    <!-- End landing -->
+    <!-- Start Offers -->
+    <div class="offers">
+      <div class="container">
+        <div class="section-heading">
+          Offers
+        </div>
+        <div class="cards">
+          <div class="o-card">
+            <img src="img/offers/turkey.jpg" alt="turkey">
+            <div class="intro">
+              <h1>Turkey</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam molestias exercitationem tempore hic aperiam esse odio eius, ducimus cumque ut, illum quae eveniet, neque culpa facere et nesciunt libero.</p>
+              <button>Book Now!</button>
+            </div>
+          </div>
+          <div class="o-card">
+            <img src="img/offers/japan.jpg" alt="Japan">
+            <div class="intro">
+              <h1>Japan</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam molestias exercitationem tempore hic aperiam esse odio eius, ducimus cumque ut, illum quae eveniet, neque culpa facere et nesciunt libero.</p>
+              <button>Book Now!</button>
+            </div>
+          </div>
+          <div class="o-card">
+            <img src="img/offers/maldives.jpg" alt="maldives">
+            <div class="intro">
+              <h1>Maldives</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam molestias exercitationem tempore hic aperiam esse odio eius, ducimus cumque ut, illum quae eveniet, neque culpa facere et nesciunt libero.</p>
+              <button>Book Now!</button>
+            </div>
+          </div>
+        </div>
+        <a href="#">See More</a>
+      </div>
+    </div>
+    <!-- End Offers -->
+    <!-- Start Airlines -->
+    <div class="airlines container">
+      <div class="txt">
+        <h2>Popular Airlines</h2>
+        <p>Book cheap flights on your favourite airlines</p>
+      </div>
+      <div class="logos">
+        <div><img src="img/companies-logos/rj.png" alt=""></div>
+        <div><img src="img/companies-logos/fe.png" alt=""></div>
+        <div><img src="img/companies-logos/et.png" alt=""></div>
+        <div><img src="img/companies-logos/fd.png" alt=""></div>
+      </div>
+    </div>
+    <!-- End Airlines -->
+    <!-- Start trends -->
+    <div class="offers trends">
+      <div class="container">
+        <div class="section-heading">
+          Trends
+        </div>
+        <div class="cards">
+          <div class="o-card">
+            <img src="img/trends/india.jpg" alt="india">
+            <div class="intro">
+              <h1>India</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam molestias exercitationem tempore hic aperiam esse odio eius, ducimus cumque ut, illum quae eveniet, neque culpa facere et nesciunt libero.</p>
+              <button>Book Now!</button>
+            </div>
+          </div>
+          <div class="o-card">
+            <img src="img/trends/algeria.jpg" alt="algeria">
+            <div class="intro">
+              <h1>Algeria</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam molestias exercitationem tempore hic aperiam esse odio eius, ducimus cumque ut, illum quae eveniet, neque culpa facere et nesciunt libero.</p>
+              <button>Book Now!</button>
+            </div>
+          </div>
+          <div class="o-card">
+            <img src="img/trends/malazyaia.jpg" alt="malaysia">
+            <div class="intro">
+              <h1>Malaysia</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam molestias exercitationem tempore hic aperiam esse odio eius, ducimus cumque ut, illum quae eveniet, neque culpa facere et nesciunt libero.</p>
+              <button>Book Now!</button>
+            </div>
+          </div>
+        </div>
+        <a href="#">See More</a>
+      </div>
+    </div>
+    <!-- End trends -->
+    <!-- Start About us -->
+    <div class="about">
+      <div class="container">
+        <div class="section-heading">
+          About Us
+        </div>
+        <div class="row">
+          <div class=" col-md-4 d-flex justify-content-center">
+            <div class="img-box">
+              <img src="img/about/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-8 txt">
+            <h2>Flyngo</h2>
+            <p>We’re on a mission to help people discover the real value of travel — to inspire, to give more reasons, to make it easy — for you to go. Our company was founded back in 2005, and since then, we’ve imagined and created some of the most well-loved products for travelers all around the world.</p>
+            <p>Today, Flyngo is used by millions of people every month — people who travel for adventure, for work, for family and for many other reasons. That’s why we work tirelessly to make your experience of planning & booking flights, hotels and trips as seamless as possible.</p>
+            <p>Flyngo is more than just an app, a website or a company. Flyngo is an idea and belief that everyone has an innate desire and yearning to travel — to experience, to live and to grow.</p>
+            <p>So ingrained is this idea of the human need to travel that we’ve woven this emotional and eternal question of “why we go?” into the name of our organisation — Flyngo.</p>
+            <a href="#"><button style="width: fit-content;">Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About us -->
+  </body>
+</html>

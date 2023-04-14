@@ -1,0 +1,23 @@
+.socialmedia-btn-f, .socialmedia-btn-g, .socialmedia-btn-t{
+    background-color: var(--main-color);
+    padding: 0.3rem;
+    margin: 1px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.create-account-btn{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+}
+.sign-using-api{
+    margin-top: 10px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,255 @@
+@import url(style.css);
+.landing {
+    background-image: url(../img/philip-myrtorp-iiqpxCg2GD4-unsplash.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: end;
+    margin-bottom: 160px;
+}
+.landing .search-box {
+    position: absolute;
+    left: 50%;  
+    bottom: -80px;
+    height: fit-content;
+    background-color: white;
+    transform: translateX(-50%);
+    color: var(--main-color);
+    padding: 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width: 767px) {
+    .landing .search-box {
+        width: 100%;
+    }
+}
+.landing .search-box .trip-type {
+    display: flex;
+    align-self: flex-start;
+}
+.landing .search-box .trip-type div {
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: var(--main-color);
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.landing .search-box .trip-type div.active,
+.landing .search-box .trip-type div:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.landing .search-box .selections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.landing .search-box .selections input{
+    margin: 20px 10px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 10px;
+    border: 1px gray solid;
+    background-color: grasy;
+    outline: none; 
+}
+.landing .search-box .selections input.main {
+    flex: 2;
+    width: 250px;
+    position: relative;
+}
+.landing .search-box .selections input.second {
+    position: relative;
+    font-size: 14px;
+    width: 100px;
+}
+@media (max-width: 767px) {
+    .landing .search-box .selections input.main {
+        flex: 10;
+    }
+    .landing .search-box .selections input.second {
+        flex: 5;
+    }
+}
+.landing .search-box .categories {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 10px;
+}
+.landing .search-box .categories select ,
+.landing .search-box .categories div button{
+    margin: 10px 20px;
+    width: 100px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.landing .search-box .categories button {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;    
+} 
+.landing .search-box .categories button:hover {
+    border: 1px var(--main-color) solid;
+    background-color: white;
+    color: var(--main-color);
+}
+/* Start Offers */
+.offers {
+    margin-bottom: 30px;
+}
+.section-heading {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit , minmax(300px ,1fr));    
+}
+.o-card {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    /* height: fit-content; */
+    height: 280px;
+}
+.o-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.o-card .intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: #002B5B;
+    opacity: 90%;
+    top: 334px;
+    transition: 1s;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+.intro button {
+    background-color: white;
+    padding: 10px 20px;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+.o-card:hover .intro{
+    top: 0;
+}
+.offers .container a {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+/* End Offers */
+/* Start airlines */
+.airlines {
+    display: grid;
+    align-items: center;
+    gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 30px;
+}
+.airlines .txt {
+    padding: 10px;
+}
+.airlines .txt h2{
+    font-size: 36px;
+    color: var(--main-color);
+}
+.airlines .txt p{
+    color: #777;
+}
+.airlines .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width:767px) {
+    .airlines {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .airlines .logos {
+        flex-wrap: nowrap;
+    }
+    .airlines .txt h2{
+        font-size: 34px;
+    }
+    .airlines .txt p{
+        font-size: 18px;
+    }
+}
+.airlines .logos div {
+    margin: 10px;
+}
+.airlines .logos div img{
+    width: 90%;
+}
+/* End airlines */
+/* Start About */
+.about .img-box {
+    width: 100%;
+    height: 500px;
+    padding: 40px 0px;
+}
+.about .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about .txt {
+    padding: 40px ;
+    display: flex;
+    flex-direction: column;
+}
+.about .txt h2 {
+    margin-bottom: 20px;
+}
+.about .txt a{
+    align-self: flex-end;
+}
+.about .txt button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+}
+/* End About */
