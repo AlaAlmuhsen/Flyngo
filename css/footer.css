@@ -1,0 +1,36 @@
+/* Start Footer */
+.footer {
+    background-color: #002B5B;
+    padding: 80px 0px;
+}
+.footer .footer-nav {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    margin-bottom: 40px;
+}
+@media (max-width:767px){
+    .footer .footer-nav {
+        justify-items: center;
+
+    }
+}
+.footer .footer-col {
+    color: white;
+}
+.footer .footer-col a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;  
+    font-size: 16px;       
+}
+.footer .icons {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .icons .social i{
+    margin: 0px 5px;
+}
+/* End Footer */

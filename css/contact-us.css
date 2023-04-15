@@ -1,0 +1,20 @@
+@import url(header.css);
+@import url(footer.css);
+.btn-primary{
+    background-color: var(--main-color);
+}
+.contact-us{
+color: var(--main-color);
+}
+.btn-primary{
+    margin-left: 40%;
+}
+.contact-us h1{
+    margin-top: 15%;
+    font-weight: bold;
+}
+.contact-img{
+    margin-top: 6%;
+    border-radius: 30%;
+   
+}

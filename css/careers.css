@@ -1,0 +1,63 @@
+@import url(header.css);
+@import url(footer.css);
+.title-for-section {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.card-img-top {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.job-careers {
+  position: relative;
+  color: white;
+  margin-bottom: 5%;
+}
+.job-type {
+  position: absolute;
+  bottom: 0rem;
+  left: 8rem;
+  font-size: medium;
+  font-weight: bold;
+}
+.btn-primary {
+  color: white;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.card {
+  margin-right: 10%;
+}
+.card-title-available-job {
+  color: var(--main-color);
+}
+.link-available-job {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.icons-team-work {
+  transition: transform 2s;
+}
+.rotate {
+  margin-left: 8rem;
+  margin-bottom: 2rem;
+}
+
+.rotate:hover {
+  transform: rotate(270deg);
+}
+
+.card-icon-team-work {
+  text-align: center;
+}
+.card-body a:hover {
+  color: blue;
+}
+
